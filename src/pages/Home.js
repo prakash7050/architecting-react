@@ -8,7 +8,7 @@ import { useMemo, useState } from 'react'
 import groupImage1 from '../images/Group 31.png'
 import CarouselList from '../components/CarouseList'
 import CircleList from '../components/CircleList/CircleListr'
-import { Gamepad, Games, Menu, SportsEsports, Telegram, Twitter } from '@mui/icons-material'
+import { Menu, SportsEsports, Telegram, Twitter } from '@mui/icons-material'
 
 const Home = () => {
     const [tabValue, setTabValue] = useState('Services')
@@ -63,7 +63,7 @@ const Home = () => {
                 }
                 {
                     (isMobile || window.innerWidth < 900) && 
-                    <Grid className='grid' xs={6} md={4}>
+                    <Grid className='grid-menu' xs={6} md={4}>
                         <Menu style={{color:'white'}} />
                     </Grid>
                 }
@@ -84,7 +84,7 @@ const Home = () => {
                             return(
                                 <Grid xs={6} md={4} className='grid-div'>
                                     <Box sx={{marginTop:2,marginLeft:2}}>
-                                        <img className='group-image1' src={groupImage1} />
+                                        <img src={groupImage1} />
                                         <p className='text5'>{item.name}</p>
                                     </Box>
                                 </Grid>
@@ -102,7 +102,8 @@ const Home = () => {
             <CarouselList />
             <p className='text3' style={{marginTop:50}}>Team</p>
             <p className='text4'>Meet our dynamic team</p>
-            <Grid container spacing={5} margin={15} marginRight={10}>
+            <div style={{display:'block', alignItems:'center',justifyContent:'center'}}>
+            <Grid container spacing={5} margin={15} marginLeft={3}>
             {[1,2,3,4].map(id => {
                 return (
                     <Grid xs={6} md={3}>
@@ -111,6 +112,7 @@ const Home = () => {
                 )
             })}
             </Grid>
+            </div>
             <p className='text3' style={{marginTop:50}}>Contact Us</p>
             <p className='text4'>Get in touch with us for tailored solutions</p>
             <Grid container spacing={2} justifyContent={'center'} >

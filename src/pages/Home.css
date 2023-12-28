@@ -14,12 +14,14 @@ linear-gradient(0deg, #1B1330, #1B1330);
     radial-gradient(100% 50.01% at 0% 0%, rgba(0, 163, 255, 0.14) 0%, rgba(0, 163, 255, 0.06) 53.13%, rgba(0, 163, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
     linear-gradient(0deg, #1B1330, #1B1330);
 }
+
 .Image1-item {
     width: 50%;
     height: 55%;
     margin-top: -50%;
     mix-blend-mode: screen;
 }
+
 .Image2-item {
     width: 80%;
     height: 55%;
@@ -30,19 +32,20 @@ linear-gradient(0deg, #1B1330, #1B1330);
 .text1 {
     color: #FFFFFF;
     font-family: Michroma;
-    font-size: 80px;
+    font-size: 300%;
     font-weight: 400;
-    line-height: 100px;
     letter-spacing: 0em;
     text-align: center;
-    margin-top: -35%;
+    margin-top: -38%;
 }
+
 .text2 {
     color: #d4cdcd;
     letter-spacing: 0em;
     text-align: center;
-    margin-top: -5%;
+    /* margin-top: -5%; */
 }
+
 .text3 {
     color: #FFFFFF;
     font-family: Michroma;
@@ -53,19 +56,22 @@ linear-gradient(0deg, #1B1330, #1B1330);
     text-align: center;
     margin-top: 22%;
 }
+
 .text4 {
     color: #FFFFFF;
     font-family: Questrial;
-    font-size: 24px;
+    font-size: 120%;
     font-weight: 400;
     line-height: 25px;
     letter-spacing: 0em;
     text-align: center;
+    margin-top: -2%;
 }
+
 .text5 {
     color: #FFFFFF;
     font-family: Michroma;
-    font-size: 25px;
+    font-size: 100%;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
@@ -74,8 +80,13 @@ linear-gradient(0deg, #1B1330, #1B1330);
 
 .grid {
     margin-top: 15px;
-    margin-left: -10px;
 }
+
+.grid-menu {
+    margin-top: 15px;
+    text-align: right;
+}
+
 .group-image {
     width: 8pc;
 }
@@ -90,9 +101,10 @@ linear-gradient(0deg, #1B1330, #1B1330);
 }
 
 .box-div {
-    height:150px;
-    width:"100%";
+    height: 20%;
+    width: 100%;
     background:linear-gradient(89.6deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.06) 100%);
+    display: block;
 }
 
 .box-div-text {

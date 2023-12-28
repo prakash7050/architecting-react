@@ -6,7 +6,7 @@ import './cardList.css'
 const CardList = ({item = {}}) => {
 
     return (
-        <Box sx={{width:"15%",height:400,display:'block',margin:15}}>
+        <Box sx={{width:"15%",height:400,display:'block',margin:15,marginLeft:10,alignItems:'center'}}>
             <div style={{width:300}}>
             <img className="card-img" src={item?.image} />
             </div>
